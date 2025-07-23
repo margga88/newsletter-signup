@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
+:root {    
+ --primary-red: hsl(4, 100%, 67%);
+ --blue-800: hsl(234, 29%, 20%);
+ --blue-700: hsl(235, 18%, 26%);
+ --grey: hsl(0, 0%,58%);
+ --white: hsl(0, 0%, 100%);
+
+ --font-size-main: 16px;
+}
+
+html {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 400;
+    font-size: var(--font-size-main);
+}
+
+
+
+
+/* COMPOSITION */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;    
+    place-items: center;    
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--LightGrayishBlue);
+}
+
+main {
+    display: flex;
+    width: 320px;
+    height: auto;
+    margin: 0 auto;     
+}
+
+.card1 {
+    width: 320px;    
+    height: 842px;
+}
+
+.img-wrapper {
+    width: 320px;
+}
+
+.img-wrapper img {
+    width: 320px;
+    object-fit: cover;
+}
+
+.card1-text-content {
+    margin: auto 0;
+}
+
+h1 {
+    font-size: 2.25em;
+}
+
+
+
+.card2 {
+    display: none;
+}
+
+footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
