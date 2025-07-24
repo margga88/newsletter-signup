@@ -49,7 +49,7 @@ main {
 
 .card1 {
     width: 320px;    
-    height: 842px;
+    height: 800px;
 }
 
 .img-wrapper {
@@ -62,12 +62,61 @@ main {
 }
 
 .card1-text-content {
-    margin: auto 0;
+    margin: auto 12px;
+    line-height: 1.5;
 }
 
 h1 {
     font-size: 2.25em;
+    margin-bottom: 15px; 
 }
+
+p {
+    margin: 0 auto;
+}
+
+ul {
+    list-style-image: url(./assets/images/icon-list.svg);  
+    margin-left: -10px;
+    margin-top: 30px;           
+}
+
+li {
+   padding-left: 6px;
+   margin-bottom: 10px;        
+}
+
+form {
+    margin-top: 35px;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: 700;    
+}
+
+input {
+    height: 55px;
+    width: 98%;
+    border: 1px solid var(--grey);
+    border-radius: 7px;
+    margin-top: 5px;    
+}
+
+button {
+    margin-top: 25px;
+    width: 100%;
+    height: 55px;
+    border: 1px solid var(--blue-700);
+    border-radius: 7px;
+    font-family: 'Roboto-Bold', sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    color: var(--white);
+    background-color: var(--blue-800);
+}
+
 
 
 
@@ -81,4 +130,38 @@ footer {
     bottom: 0;
     width: 100%;
     height: auto;
+}
+
+
+/* UTILITIES */
+
+.bullets {
+    display: inline-block;
+    vertical-align: -20px;    
+}
+
+.last-bullet {
+    display: inline-block;
+    vertical-align: 5px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* BLOCKS */
+
+
+
+/* EXCEPTIONS */
+
+input[type="email"]::placeholder {
+    padding-left: 20px;
+    font-size: 1rem;
 }
