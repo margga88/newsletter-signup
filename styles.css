@@ -65,7 +65,7 @@ main {
     display: none;
 }
 
-.card1-text-content {
+.card1-content {
     margin: auto 12px;
     line-height: 1.5;
 }
@@ -73,7 +73,8 @@ main {
 h1 {
     font-size: 2.5em;
     margin-bottom: 15px;
-    font-family: 'Roboto-Bold', sans-serif; 
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: 400; 
 }
 
 p {
@@ -92,7 +93,7 @@ li {
 }
 
 form {
-    margin-top: 35px;
+    margin-top: 33px;
 }
 
 label {
@@ -102,7 +103,7 @@ label {
 
 input {
     height: 55px;
-    width: 93.5%;
+    width: 92%;
     border: 1px solid var(--grey);
     border-radius: 7px;
     margin-top: 5px;
@@ -189,7 +190,7 @@ footer {
         width: 375px;
     }
 
-    .card1-text-content {
+    .card1-content {
         margin: -10px 20px auto 20px;
     }
 
@@ -239,7 +240,7 @@ footer {
     }
 
     main {
-        width: 850px;
+        width: 750px;
         height: auto;        
         margin: 0 auto;       
     }
@@ -247,8 +248,8 @@ footer {
     .card1 {
         display: inline-flex;
         flex-direction: row-reverse;
-        width: 850px;
-        height: 575px;
+        width: 750px;
+        height: 515px;
         background-color: var(--white);
         margin: 35px auto;
         border-radius: 40px;
@@ -257,6 +258,8 @@ footer {
 
     .img-wrapper {
        margin: 25px;
+       width: 300px;
+       
     }
 
     #mobile-img, #tablet-img {
@@ -265,18 +268,47 @@ footer {
 
     #desktop-img {
         display: inline-flex;
-        width: auto;
-        height: 525px;
+        width: 300px;        
+        height: 475px;
         object-fit: cover;
-        margin-left: 30px;
+        border-radius: 15px;
+               
     }
 
-    .card1-text-content {
-        margin: 5px auto 5px 50px;
+    .card1-content {
+        margin: 22px 10px 5px 50px;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 5px;
+    }
+
+    ul {
+        margin-top: 15px;
     }
 
     li {
         margin-bottom: 5px;
+    }
+    
+    .bullets {
+        vertical-align: -17px;
+    }
+
+    form {
+        margin-top: 10px;
+    }
+
+    input {
+        width: 85%;
+        height: 40px;
+    }
+
+    button {
+        margin-top: 10px;
+        width: 91.8%;
+        height: 45px;
     }
 
     footer {
@@ -295,42 +327,57 @@ footer {
 
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1280px) {
 
     main {
-        width: 900px;
+        width: 1280px;
         height: auto;
-        margin: 173px auto; 
+        margin: 58px auto;
+       
     }
 
     .card1 {
         width: 900px;
+        height: 600px;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+    main {
+        width: 950px;
+        height: auto;
+        margin: 173px auto; 
+    }
+   
+    .card1 {
+        width: 950px;
         height: 650px;
     }
 
-    .card1-text-content {
-        margin: 25px 25px auto 60px;
+    .card1-content {
+        margin: 55px 25px auto 65px;
     }
 
     .img-wrapper {
-        width: auto;
-        height: 600px;
-        margin-left: 0;
-
+        width: 420px;
+        height: 600px;       
     }
 
-    #desktop-img {
-        width: auto;
+    #desktop-img {       
         height: 600px;
         object-fit: cover;
+        margin-left: 0;
     }
 
     input {
-        width: 93.5%;
+        width: 90.3%;
+                     
     }
 
     button {
-        width: 100%;
+        width: 96%;
     }
 
 
