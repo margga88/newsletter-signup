@@ -18,6 +18,12 @@
  --font-size-main: 16px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     font-family: 'Roboto-Regular', sans-serif;
     font-weight: 400;
@@ -30,12 +36,10 @@ html {
 /* COMPOSITION */
 
 body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr auto;
     min-width: 320px;    
-    place-items: center;    
-    box-sizing: border-box;
-    margin: 0;
+    place-items: center;  
     min-height: 100vh;
     background-color: var(--LightGrayishBlue);
 }
