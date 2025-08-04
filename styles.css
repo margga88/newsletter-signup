@@ -37,7 +37,7 @@ html {
 
 body {
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr auto;    
     min-width: 320px;    
     place-items: center;  
     min-height: 100vh;
@@ -52,7 +52,8 @@ main {
 }
 
 .card1 {
-    display: none;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     width: 320px;    
     height: 800px;
 }
@@ -88,7 +89,7 @@ p {
 
 ul {
     list-style-image: url(./assets/images/icon-list.svg);  
-    margin-left: -10px;
+    margin-left: 25px;
     margin-top: 30px;           
 }
 
@@ -108,7 +109,7 @@ label {
 
 input {
     height: 55px;
-    width: 92%;
+    width: 100%;
     border: 1px solid var(--grey);
     border-radius: 7px;
     margin-top: 5px;
@@ -132,7 +133,7 @@ button {
 
 
 .card2 {
-    display: block;
+    display: none;
     min-width: 320px;    
     height: auto;    
 }
@@ -213,21 +214,17 @@ footer {
     }
 
     .card1-content {
-        margin: -10px 22px auto 20px;
+        margin: 30px 25px auto 25px;
+    }   
+
+    .card2-content {    
+        margin: 175px 20px auto 20px;
     }
 
-   input {
-        width: 92.5%;
-   }
-
-   .card2-content {    
-        margin: 175px 20px auto 20px;
-   }
-
-   .button2 {
+    .button2 {
         margin-top: 258px;
         margin-bottom: 25px;
-   }
+    }
 
 
 }
@@ -266,11 +263,7 @@ footer {
 
     .bullets {
         vertical-align: 5px;
-    }
-
-    button {
-        width: 97%;
-    }
+    }   
 
 }
 
