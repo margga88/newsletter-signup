@@ -52,7 +52,7 @@ main {
 }
 
 .card1 {
-    display: grid;
+    display: none; /* grid */
     grid-template-rows: auto 1fr auto;
     width: 320px;    
     height: 800px;
@@ -133,13 +133,15 @@ button {
 
 
 .card2 {
-    display: none;
+    display: flex; /* flex */
     min-width: 320px;    
     height: auto;    
 }
 
-.card2-content {    
-    margin: 25px 20px auto 20px;
+.card2-content {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr auto;        
+    margin: 30px 20px -5px 20px;
 }
 
 .card2-content h1 {
@@ -147,11 +149,12 @@ button {
 }
 
 .card2-content p {
+    margin-top: 12px;
     line-height: 1.5;
 }
 
 .button2 {
-    margin-top: 75px;
+    margin-top: 50px;
     margin-bottom: 25px;
 }
 
@@ -222,10 +225,9 @@ footer {
     }
 
     .button2 {
-        margin-top: 258px;
+        margin-top: 230px;
         margin-bottom: 25px;
     }
-
 
 }
 
@@ -263,7 +265,12 @@ footer {
 
     .bullets {
         vertical-align: 5px;
-    }   
+    }
+    
+    .card2-content {
+        grid-template-rows: 100px auto auto 1fr;
+        row-gap: 5px;
+    }
 
 }
 
@@ -307,7 +314,7 @@ footer {
     }
 
     .card1-content {
-        margin: 22px 0 5px 50px;
+        margin: 25px 0 5px 50px;
     }
 
     h1 {
@@ -324,21 +331,19 @@ footer {
     }
     
     .bullets {
-        vertical-align: -17px;
+        vertical-align: -10px;
     }
 
     form {
         margin-top: 10px;
     }
 
-    input {
-        width: 85%;
-        height: 40px;
+    input {        
+        height: 45px;
     }
 
     button {
-        margin-top: 10px;
-        width: 91.8%;
+        margin-top: 10px;        
         height: 45px;
     }
 
@@ -405,14 +410,12 @@ footer {
         margin-top: 25px;
     }
 
-    input {
-        width: 90%;
-        height: 50px;
+    input {        
+        height: 55px;
     }
 
     button {
-        margin-top: 15px;
-        width: 96.3%;
+        margin-top: 15px;        
         height: 55px;
     }
 
@@ -455,21 +458,11 @@ footer {
     }
 
     ul {
-        margin-top: 25px;
+        margin-top: 25px;   
     }
-  
-
-    input {
-        width: 90.8%;
-                     
-    }
-
-    button {
-        width: 97%;
+     
+    button {        
         margin-top: 20px;
     }
-
-
-
 
 }
