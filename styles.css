@@ -52,7 +52,7 @@ main {
 }
 
 .card1 {
-    display: none; /* grid */
+    display: grid; /* grid */
     grid-template-rows: auto 1fr auto;
     width: 320px;    
     height: 800px;
@@ -133,7 +133,7 @@ button {
 
 
 .card2 {
-    display: flex; /* flex */
+    display: none; /* flex */
     min-width: 320px;    
     height: auto;    
 }
@@ -274,6 +274,8 @@ footer {
 
 }
 
+/* DESKTOP */
+
 @media only screen and (min-width: 1024px) {
 
     body {
@@ -290,7 +292,7 @@ footer {
         display: inline-flex;
         flex-direction: row-reverse;
         width: 750px;
-        height: 515px;
+        height: 515px; 
         background-color: var(--white);
         margin: 35px auto;
         border-radius: 40px;        
@@ -314,7 +316,7 @@ footer {
     }
 
     .card1-content {
-        margin: 25px 0 5px 50px;
+        margin: 45px 20px 5px 50px;
     }
 
     h1 {
@@ -331,7 +333,7 @@ footer {
     }
     
     .bullets {
-        vertical-align: -10px;
+        vertical-align: -18px;
     }
 
     form {
@@ -365,16 +367,23 @@ footer {
 
 @media only screen and (min-width: 1280px) {
 
+    .container {
+        display: grid;
+        min-width: 1280px;
+        grid-template-rows: 1fr auto;
+        row-gap: 10px;              
+    }
+
     main {
         width: 1280px;
         height: auto;
-        margin: auto 0;
-       
+        margin: 20px auto 0;       
     }
 
     .card1 {
         width: 900px;
         height: 600px;
+        margin: 0 auto;
     }
 
     .img-wrapper {
@@ -390,11 +399,16 @@ footer {
     }
 
     .card1-content {
-        margin: 40px 25px auto 65px;
+        margin: 70px 25px auto 50px;
+    }
+
+    .card1-content p {
+        margin-top: 10px;
     }
 
     h1 {
         font-size: 3.5em;
+        margin: 0 auto;
     }
 
     ul {
@@ -426,7 +440,7 @@ footer {
     main {
         width: 915px;
         height: auto;
-        margin: 193px auto; 
+        margin: 193px auto 180px; 
     }
    
     .card1 {
@@ -435,7 +449,7 @@ footer {
     }
 
     .card1-content {
-        margin: 45px 25px auto 65px;
+        margin: 80px 38px auto 65px;
     }
 
     .card1-text-content {
