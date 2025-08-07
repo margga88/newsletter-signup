@@ -413,6 +413,7 @@ footer {
 
     ul {
         margin-top: 20px;
+        margin-left: 27px; 
     }
 
     .bullets {
@@ -472,7 +473,7 @@ footer {
     }
 
     ul {
-        margin-top: 25px;   
+        margin-top: 25px;        
     }
      
     button {        
