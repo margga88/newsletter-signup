@@ -282,6 +282,13 @@ footer {
         background-color: var(--blue-800);
     }
 
+    .container {
+        display: grid;
+        min-width: 1024px;
+        grid-template-rows: 1fr auto;
+        row-gap: 10px;              
+    }
+
     main {
         width: 750px;
         height: auto;        
@@ -289,7 +296,7 @@ footer {
     }
 
     .card1 {
-        display: inline-flex;
+        display: none; /* inline-flex */
         flex-direction: row-reverse;
         width: 750px;
         height: 515px; 
@@ -349,6 +356,29 @@ footer {
         height: 45px;
     }
 
+    .card2 {
+        display: flex; /* flex */
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        border-radius: 40px;
+        background-color: var(--white);
+    }
+
+    .card2-content {
+        grid-template-rows: 100px auto auto auto;
+        margin: 40px 60px;
+    }
+
+    .card2-content h1 {
+        font-size: 3.5em;
+    }
+
+    .button2 {
+        height: 55px;
+        margin: 30px auto;
+    }
+
     footer {
         background-color: var(--blue-800);
     }
@@ -361,6 +391,18 @@ footer {
 
     .attribution a {
         color: var(--primary-red);
+    }
+
+    /* EXCEPTIONS */
+
+    .button2:hover {
+        background: linear-gradient(135deg, #f34079 40%, #fc894d);
+        border: none;
+        cursor: pointer;
+    }
+
+    .button2:active {
+        box-shadow: 0px 8px 24px 2px #ff490171;
     }
 
 }
@@ -434,6 +476,9 @@ footer {
         height: 55px;
     }
 
+    .button2 {
+        margin-bottom: 5px;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -478,6 +523,10 @@ footer {
      
     button {        
         margin-top: 20px;
+    }
+
+    .card2-content {
+        margin: 45px 60px 65px;
     }
 
 }
