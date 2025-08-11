@@ -192,6 +192,13 @@ footer {
 
 /* BLOCKS */
 
+#emailError {
+    display: none; /* block */
+    position: absolute;
+    margin-top: -5.2em;
+    margin-left: 9.75em;
+    color: var(--primary-red);
+}
 
 
 /* EXCEPTIONS */
@@ -296,7 +303,7 @@ footer {
     }
 
     .card1 {
-        display: none; /* inline-flex */
+        display: inline-flex; /* inline-flex */
         flex-direction: row-reverse;
         width: 750px;
         height: 515px; 
@@ -357,7 +364,7 @@ footer {
     }
 
     .card2 {
-        display: flex; /* flex */
+        display: none; /* flex */
         width: 500px;
         height: 500px;
         margin: 0 auto;
