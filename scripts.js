@@ -2,8 +2,10 @@ const buttonTwo = document.getElementById('button2');
 const emailForm = document.getElementById('emailForm');
 const emailInput = document.getElementById('email-input');
 const emailError = document.getElementById('emailError');
+const emailData = document.getElementById('email-data');
 const cardOne = document.getElementById('card1');
 const cardTwo = document.getElementById('card2');
+
 
 function validateEmail(e) {
     e.preventDefault();   
@@ -12,19 +14,31 @@ function validateEmail(e) {
 
     if(emailInput.value.match(emailRegex)) {
         cardOne.style.display = 'none';
-        cardTwo.style.display = 'flex';                             
-            
+        cardTwo.style.display = 'flex';
+        emailData.textContent = emailInput.value;
+        
     } else {       
         emailError.style.display = 'block';
-        emailInput.style.borderColor = 'var(--primary-red)'; 
-        emailInput.style.backgroundColor = 'var(--primary-red)';          
+        emailInput.style.borderColor = 'var(--primary-color)';
+        emailInput.style.color = 'var(--primary-color)';
+        emailInput.style.backgroundColor = 'var(--primary-shade)';          
     }
 }
 
 function backHome(e) {
-    emailInput.value = '';
-    cardOne.style.display = 'grid';
-    cardTwo.style.display = 'none';  
+
+    let w = document.documentElement.clientWidth || window.innerWidth;    
+    const desktopWidth = 1024; 
+    
+    if(w < desktopWidth) {
+        emailInput.value = '';
+        cardOne.style.display = 'grid';
+        cardTwo.style.display = 'none';
+    } else {
+        emailInput.value = '';
+        cardOne.style.display = 'inline-flex';
+        cardTwo.style.display = 'none';
+    }  
 }
 
 emailForm.addEventListener('submit', validateEmail);
