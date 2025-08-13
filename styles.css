@@ -200,8 +200,8 @@ footer {
 #emailError {
     display: none; /* block */
     position: absolute;
-    margin-top: -5.2em;
-    margin-left: 9.75em;
+    margin-top: -6.6em;
+    margin-left: 15.2em;
     color: var(--primary-color);
     font-size: 0.75rem;
     font-weight: 700;
@@ -212,6 +212,11 @@ footer {
 
 input:hover {
     cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid var(--secondary-color-2);
 }
 
 #button1:hover,
@@ -260,6 +265,10 @@ input:hover {
         margin-bottom: 25px;
     }
 
+    #emailError {
+        margin-left: 17.6em;
+    }
+
 }
 
 
@@ -296,6 +305,10 @@ input:hover {
 
     .bullets {
         vertical-align: 5px;
+    }
+    
+    #emailError {
+        margin-left: 30.35em;
     }
     
     .card2-content {
@@ -410,6 +423,11 @@ input:hover {
         margin: 30px auto;
     }
 
+    #emailError {
+        margin-top: -5.75em;
+        margin-left: 17.15em;
+    }
+
     footer {
         background-color: var(--secondary-color);
     }
@@ -422,9 +440,7 @@ input:hover {
 
     .attribution a {
         color: var(--primary-color);
-    }
-
-    /* EXCEPTIONS */
+    }  
  
 
 }
@@ -484,6 +500,10 @@ input:hover {
         vertical-align: 5px;
     }
 
+    #emailError {
+        margin-top: -6.6em;
+        margin-left: 24.25em;
+    }
     
     form {
         margin-top: 25px;
@@ -545,6 +565,10 @@ input:hover {
      
     button {        
         margin-top: 20px;
+    }
+
+    #emailError {       
+        margin-left: 21.75em;
     }
 
     .card2-content {

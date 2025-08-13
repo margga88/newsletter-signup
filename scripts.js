@@ -34,19 +34,18 @@ function backHome(e) {
         emailInput.value = '';
         cardOne.style.display = 'grid';
         cardTwo.style.display = 'none';
+        emailError.style.display = 'none';
+        emailInput.style.borderColor = 'var(--neutral1)';
+        emailInput.style.backgroundColor = 'var(--neutral2)';
     } else {
         emailInput.value = '';
         cardOne.style.display = 'inline-flex';
         cardTwo.style.display = 'none';
+        emailError.style.display = 'none';
+        emailInput.style.borderColor = 'var(--neutral1)';
+        emailInput.style.backgroundColor = 'var(--neutral2)';
     }  
 }
 
 emailForm.addEventListener('submit', validateEmail);
 buttonTwo.addEventListener('click', backHome);
-
-
-
-
-
-
-
