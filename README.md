@@ -45,8 +45,8 @@ From left to right:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repository](https://github.com/margga88/newsletter-signup)
+- Live Site URL: [Live here](https://margga88.github.io/newsletter-signup/)
 
 ## My process
 
