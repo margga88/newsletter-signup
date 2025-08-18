@@ -42,7 +42,7 @@ function backHome(e) {
         cardOne.style.display = 'inline-flex';
         cardTwo.style.display = 'none';
         emailError.style.display = 'none';
-        emailInput.style.color = 'auto';        
+        emailInput.style.color = 'black';        
         emailInput.style.borderColor = 'var(--neutral1)';
         emailInput.style.backgroundColor = 'var(--neutral2)';
     }  
