@@ -219,6 +219,11 @@ input:focus {
     border: 1px solid var(--secondary-color-2);
 }
 
+input::placeholder {
+    color: var(--neutral1);
+    opacity: 1;
+}
+
 #button1:hover,
 #button2:hover {
     background: linear-gradient(135deg, #f34079 40%, #fc894d);
