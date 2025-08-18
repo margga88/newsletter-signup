@@ -219,7 +219,8 @@ input:focus {
     border: 1px solid var(--secondary-color-2);
 }
 
-input::placeholder {
+input::placeholder,
+input::-webkit-input-placeholder {
     color: var(--neutral1);
     opacity: 1;
 }
