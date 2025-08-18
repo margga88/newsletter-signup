@@ -41,8 +41,7 @@ function backHome(e) {
         emailInput.value = '';
         cardOne.style.display = 'inline-flex';
         cardTwo.style.display = 'none';
-        emailError.style.display = 'none';
-        /* emailInput.style.color = 'var(--neutral1)'; */
+        emailError.style.display = 'none';        
         emailInput.style.borderColor = 'var(--neutral1)';
         emailInput.style.backgroundColor = 'var(--neutral2)';
     }  
